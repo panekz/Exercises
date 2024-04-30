@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste01</title>
+</head>
+<script>
+    function farh()
+    {
+        var C1 = document.getElementById("C1").value;
+        var F = C1 * 1.8 + 32;
+        alert("A temperatura em Fahrenheit é:" + F);
+    }
+    function kel()
+    {
+        var C2 = document.getElementById("C2").value;
+        C2 = parseInt(C2);
+        var K = C2+273.15;
+        alert("A temperatura em Kelvin é:" + K);
+    }
+    function re()
+    {
+        var C3 = document.getElementById("C3").value;
+        C3 = parseInt(C3);
+        E = C3 * 0.8;
+        alert ("A temperatura em Réaumur é:" + E);
+    }
+    function ra()
+    {
+        var C4 = document.getElementById("C4").value;
+        A = C4 * 1.8 + 32 + 459.67;
+        alert("A temperatura em Rankine é:" + A);
+    }
+</script>
+<body>
+    <h1>Converta graus celsius em 4 tipos diferentes de temperatura</h1>
+    <p>Digite a temperatura em celsius para converter para Fahrenheit:</p>
+    <input type="text" id="C1">
+    <button onclick="farh()">Converter</button>
+    <br>
+    <br>
+    <p>Digite a temperatura em celsius para converter para Kelvin:</p>
+    <input type="text" id="C2">
+    <button onclick="kel()">Converter</button>
+    <br>
+    <br>
+    <p>Digite a temperatura em celsius para converter para Réaumur:</p>
+    <input type="text" id="C3">
+    <button onclick="re()">Converter</button>
+    <br>
+    <br>
+    <p>Digite a temperatura em celsius para converter para Rankine:</p>
+    <input type="text" id="C4">
+    <button onclick="ra()">Converter</button>
+</body>
+</html>

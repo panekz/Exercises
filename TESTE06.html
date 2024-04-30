@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste06</title>
+</head>
+<script>
+    function mostra()
+    {
+        var P = document.getElementById("P").value;
+        G = 6.50;
+        KML = 12;
+        V = (P/KML) *G;
+        alert(V);
+    }
+</script>
+<body>
+    <h1>Calcule o valor gasto de combustível em um carro durante um percurso</h1>
+    <br>
+    <p>Digite a distância do percurso em quilômetros:</p>
+    <input type="text" id="P">
+    <button onclick="mostra()">Calcule</button>
+</body>
+</html>

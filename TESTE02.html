@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste02</title>
+</head>
+<script>
+    function mostra()
+    {
+        var A = document.getElementById("A").value;
+        var B = document.getElementById("B").value;
+        A = parseInt(A);
+        B = parseInt(B);
+        var soma = A + B;
+        var media = soma/2;
+        alert (media);
+    }
+</script>
+<body>
+    <h1>Calcule a média das notas bimestrais</h1>
+    <br>
+    <p>Digite a primeira nota:</p>
+    <input type="text" id="A">
+    <br>
+    <p>Digite a segunda nota:</p>
+    <input type="text" id="B">
+    <button onclick="mostra()">Calcular</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste04</title>
+</head>
+<script>
+    function mostra()
+    {
+        var M = document.getElementById("M").value;
+        var H = document.getElementById("H").value;
+        var T = document.getElementById("T").value;
+        var C = (M * H / T) / 745.6999;
+        alert(C);
+    }
+</script>
+<body>
+    <h1>Determine a quantidade de cavalos necessários</h1>
+    <p>Digite o peso da massa em quilogramas:</p>
+    <input type="text" id="M">
+    <br>
+    <p>Digite a altura:</p>
+    <input type="text" id="H">
+    <br>
+    <p>Digite o tempo em segundos:</p>
+    <input type="text" id="T">
+    <button onclick="mostra()">Calcular</button>
+</body>
+</html>

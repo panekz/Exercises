@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste08</title>
+</head>
+<script>
+    function mostra()
+    {
+       var A = 7;
+       var B = 8;
+       var C = 9;
+       M1 = (A+B+C) /3;
+       alert("A média 1 é :" + M1);
+        var D = 4;
+        var E = 5;
+        var F = 6;
+        M2 = (D+E+F) /3;
+        alert("A média 2 é :" + M2);
+        var soma = (M1+M2);
+        alert("A soma das duas médias é :" + soma);
+        var media = (M1+M2) /2;
+        alert("A média das médias é :" + media);
+    }
+</script>
+<body>
+    <h1>Calculo média 1</h1>
+    <p>Digite o número 7:</p>
+    <input type="text" id="A">
+    <p>Digite o número 8</p>
+    <input type="text" id="B">
+    <p>Digite o número 9:</p>
+    <input type="text" id="C">
+    <br>
+    <h1>Calculo média 2</h1>
+    <p>Digite o número 4:</p>
+    <input type="text" id="D">
+    <p>Digite o número 5:</p>
+    <input type="text" id="E">
+    <p>Digite o número 6:</p>
+    <input type="text" id="F">
+    <button onclick="mostra()">Calcular</button>
+</body>
+</html>

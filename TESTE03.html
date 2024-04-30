@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste03</title>
+</head>
+<script>
+    function mostra()
+    {
+        var D = document.getElementById("D").value;
+        var A = document.getElementById("A").value;
+        var T = document.getElementById("T").value;
+        var total = parseFloat(A) + parseFloat(T);
+        alert("O total gasto no mês foi:" + total);
+        var media = total / parseInt(D);
+        alert("A média diária foi:" + media);
+    }
+</script>
+<body>
+    <h1>Média diária e gastos totais com alimentação e transporte</h1>
+    <br>
+    <p>Insira o número de dias do mês:</p>
+    <input type="text" id="D">
+    <br>
+    <p>Insira o valor gasto com a alimentação:</p>
+    <input type="text" id="A">
+    <p>Insira o valor gasto com o transporte:</p>
+    <input type="text" id="T">
+    <button onclick="mostra()">Calcular</button>
+</body>
+</html>
